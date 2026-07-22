@@ -36,7 +36,7 @@ There's also a debug mode that saves side-by-side crops (raw vs. annotated) for 
 
 ## Stack
 
-- **Ultralytics YOLOv8** for both detection models (trained on Kaggle)
+- **Ultralytics YOLOv8** for both detection models 
 - **OpenCV** for all the mask work, drawing, and video handling
 - **ByteTrack** for keeping tray IDs consistent across frames
 - **NumPy** for the ratio math
@@ -47,10 +47,10 @@ Everything from confidence thresholds to how aggressively the smoothing works is
 
 ## Where this stands
 
-This was a pilot, not a finished product. It ran fine on CPU for testing, but it wasn't built with real-time deployment, multiple cameras, or live alerting in mind — that'd be the next step if the shop wanted to actually put this into daily use.
+This was a pilot, not a finished product. It ran fine on CPU for testing, but it wasn't built with real-time deployment, multiple cameras, or live alerting in mind, that'd be the next step if the shop wanted to actually put this into daily use.
 
 ## Known rough edges
 
 - Lighting changes and awkward camera angles can throw off the empty-region masks
 - Long occlusions can occasionally cause a tray to lose its tracked ID and get treated as "new"
-- Right now it's tuned for one specific camera setup — a different angle or tray layout would probably need re-tuning the thresholds
+- Right now it's tuned for one specific camera setup, a different angle or tray layout would probably need re-tuning the thresholds
